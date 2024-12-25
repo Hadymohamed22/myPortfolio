@@ -18,11 +18,9 @@ form.addEventListener("submit", (e) => {
     e.preventDefault()
 })
 
-let whatsUrl = "https://wa.me/201029379363?text=";
-
 sendBtn.addEventListener("click", () => {
     if (name.value && email.value && message.value) {
-        whatsUrl += `أهلا انا ${name.value} وبريدي الإلكتروني ${email.value} و ${message.value}`
+        let whatsUrl = `https://wa.me/201029379363?text=` + `أهلا انا ${name.value} وبريدي الإلكتروني ${email.value} و ${message.value}`
         window.open(whatsUrl, "_blank")
     }
 })
