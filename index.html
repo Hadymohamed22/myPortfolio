@@ -12,6 +12,8 @@
       href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
       rel="stylesheet"
     />
+    <!-- aos animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- font awesome css file  -->
     <link rel="stylesheet" href="assets/css/all.min.css" />
     <!-- tailwindcss output file -->
@@ -19,37 +21,37 @@
     <!-- main css file -->
     <link rel="stylesheet" href="assets/css/main.css" />
   </head>
-  <body class="bg-black">
+  <body class="dark:bg-black relative">
     <!-- start nav -->
     <nav
-      class="flex justify-center items-center bg-gradient-to-br from-[#ff66b2]/30 to-[#89cff0]/30 shadow-md shadow-[#aa6cae46] md:rounded-xl top-[-1px] md:top-5 fixed md:w-[75%] w-[100%] md:left-[50%] md:translate-x-[-50%] z-50 backdrop-blur-md"
+      class="flex justify-center items-center bg-gradient-to-br from-[#07c8f9]/50 to-[#0d41e1]/50 shadow-md md:rounded-xl top-[-1px] md:top-5 fixed md:w-[75%] w-[100%] md:left-[50%] md:translate-x-[-50%] z-50 backdrop-blur-md"
     >
       <ul class="unstyled flex items-center m-0">
         <li class="w-[70px] md:w-[100px] h-[50px]">
           <a
             href="#About"
-            class="text-decoration-none text-white h-full flex justify-center items-center"
+            class="text-decoration-none text-black hover:bg-white dark:text-white dark:hover:bg-black h-full flex justify-center items-center"
             >About</a
           >
         </li>
         <li class="w-[70px] md:w-[100px] h-[50px]">
           <a
             href="#Skills"
-            class="text-decoration-none text-white h-full flex justify-center items-center"
+            class="text-decoration-none text-black hover:bg-white dark:text-white dark:hover:bg-black h-full flex justify-center items-center"
             >Skills</a
           >
         </li>
         <li class="w-[70px] md:w-[100px] h-[50px]">
           <a
             href="#Projects"
-            class="text-decoration-none text-white h-full flex justify-center items-center"
+            class="text-decoration-none text-black hover:bg-white dark:text-white dark:hover:bg-black h-full flex justify-center items-center"
             >Projects</a
           >
         </li>
         <li class="w-[70px] md:w-[100px] h-[50px]">
           <a
             href="#Contact"
-            class="text-decoration-none text-white h-full flex justify-center items-center"
+            class="text-decoration-none text-black hover:bg-white dark:text-white dark:hover:bg-black h-full flex justify-center items-center"
             >Contact</a
           >
         </li>
@@ -61,9 +63,11 @@
     <div class="h-screen overflow-hidden relative z-10">
       <section
         class="hero h-full flex justify-center items-center font-bold backdrop-blur-xl flex-col"
+        data-aos="zoom-in"
+        data-aos-duration="1000"
       >
-        <div class="text-3xl text-white text-center">
-          i'm <span class="name block text-5xl">Hady Mohamed Sapry</span>
+        <div class="text-3xl text-black dark:text-white text-center">
+          i'm <span class="block text-5xl">Hady Mohamed Sapry</span>
         </div>
         <div
           class="absolute z-[-1] top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]"
@@ -81,7 +85,11 @@
 
     <!-- start about -->
     <section class="about my-5" id="About">
-      <div class="section-header text-5xl text-center font-bold mb-10">
+      <div
+        class="section-header text-5xl text-center font-bold mb-10"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
         About
       </div>
       <div
@@ -91,18 +99,24 @@
           <img
             src="assets/images/profile-photo.webp"
             alt="profile photo"
-            class="brightness-[.7] saturate-150"
+            class="dark:brightness-75 dark:saturate-150"
+            data-aos="fade-right"
+            data-aos-duration="1000"
           />
         </div>
-        <div class="text">
+        <div class="text overflow-hidden">
           <h2
-            class="font-bold text-3xl text-center md:text-start mt-3 md:m-0 md:pl-3"
+            class="font-bold text-3xl text-center md:text-start mt-3 md:m-0 md:pl-3 text-black dark:text-white"
+            data-aos="fade-right"
+            data-aos-duration="1000"
           >
             Hi
             <span class="name">i'm Hady Mohamed Sapry</span>
           </h2>
           <p
-            class="mt-3 text-center px-5 md:px-0 md:text-start md:w-[80%] md:pl-3 text-[#89cff0]"
+            class="mt-3 text-center px-5 md:px-0 md:text-start md:w-[80%] md:pl-3 text-[#07c8f9]"
+            data-aos="fade-right"
+            data-aos-duration="1000"
           >
             a passionate Frontend Developer and a Computer Science student at
             the University of Mansoura, expected to graduate in 2027. I
@@ -111,7 +125,9 @@
             Tailwind CSS.
           </p>
           <p
-            class="my-2 text-center px-5 md:px-0 md:text-start md:w-[80%] md:pl-3 text-[#d7d7d7]"
+            class="my-2 text-center px-5 md:px-0 md:text-start md:w-[80%] md:pl-3 text-[#8e8e8e] dark:text-[#e2e2e2]"
+            data-aos="fade-right"
+            data-aos-duration="1000"
           >
             I am committed to continuous learning and innovation, and I have
             experience in freelance projects that showcase my ability to turn
@@ -120,7 +136,9 @@
             exceptional user experiences.
           </p>
           <p
-            class="text-center px-5 md:px-0 md:text-start md:w-[80%] md:pl-3 text-[#d7d7d7]"
+            class="text-center px-5 md:px-0 md:text-start md:w-[80%] md:pl-3 text-[#8e8e8e] dark:text-[#e2e2e2]"
+            data-aos="fade-right"
+            data-aos-duration="1000"
           >
             When I'm not coding, I enjoy exploring the latest trends in web
             development and enhancing my skills to stay ahead in this
@@ -128,13 +146,17 @@
           </p>
           <a
             href="assets/files/Hady Mohamed.pdf"
-            class="download-cv mt-5 md:ml-3 text-black font-bold py-2 px-5 rounded-md bg-gradient-to-br from-[#ff66b2] to-[#89cff0] block md:flex md:w-fit text-center"
+            class="download-cv mt-5 md:ml-3 text-white dark:text-black font-bold py-2 px-5 rounded-md bg-gradient-to-br from-[#07c8f9] to-[#0d41e1] block md:flex md:w-fit text-center"
             download="Hady Mohamed CV"
+            data-aos="fade-right"
+            data-aos-duration="1000"
             >Download My CV</a
           >
           <a
             href="#Contact"
-            class="call-me mt-5 md:ml-3 text-black font-bold py-2 px-5 rounded-md bg-gradient-to-br from-[#ff66b2] to-[#89cff0] block md:flex md:w-fit text-center"
+            class="call-me my-5 md:ml-3 text-white dark:text-black font-bold py-2 px-5 rounded-md bg-gradient-to-br from-[#07c8f9] to-[#0d41e1] block md:flex md:w-fit text-center"
+            data-aos="fade-right"
+            data-aos-duration="1000"
             >Contact Me</a
           >
         </div>
@@ -144,7 +166,11 @@
 
     <!-- start skills -->
     <section class="skills my-10" id="Skills">
-      <div class="section-header text-5xl text-center font-bold mb-10">
+      <div
+        class="section-header text-5xl text-center font-bold mb-10"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
         Skills
       </div>
       <div
@@ -152,7 +178,10 @@
       >
         <div class="skill-box flex justify-center">
           <div
-            class="skill html absolute w-[110px] flex items-center justify-center h-[110px] bg-gradient-to-br from-[#ff66b2]/40 to-[#89cff0]/40 shadow-white/20 shadow-inner rounded-full"
+            class="skill html absolute w-[110px] flex items-center justify-center h-[110px] bg-gradient-to-br from-[#07c8f9] to-[#0d41e1] shadow-white/20 shadow-inner rounded-full"
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+            data-aos-delay="100"
           >
             <img
               src="assets/images/html-logo.webp"
@@ -165,7 +194,10 @@
         </div>
         <div class="skill-box flex justify-center">
           <div
-            class="skill css absolute w-[110px] flex items-center justify-center h-[110px] bg-gradient-to-br from-[#ff66b2]/40 to-[#89cff0]/40 shadow-white/20 shadow-inner rounded-full"
+            class="skill css absolute w-[110px] flex items-center justify-center h-[110px] bg-gradient-to-br from-[#07c8f9] to-[#0d41e1] shadow-white/20 shadow-inner rounded-full"
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+            data-aos-delay="150"
           >
             <img
               src="assets/images/css-logo.webp"
@@ -173,12 +205,16 @@
               width="50"
               height="50"
               loading="lazy"
+              class="drop-shadow-md"
             />
           </div>
         </div>
         <div class="skill-box flex justify-center">
           <div
-            class="skill bootstrap absolute w-[110px] flex items-center justify-center h-[110px] bg-gradient-to-br from-[#ff66b2]/40 to-[#89cff0]/40 shadow-white/20 shadow-inner rounded-full"
+            class="skill bootstrap absolute w-[110px] flex items-center justify-center h-[110px] bg-gradient-to-br from-[#07c8f9] to-[#0d41e1] shadow-white/20 shadow-inner rounded-full"
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+            data-aos-delay="200"
           >
             <img
               src="assets/images/bootstrap-logo.webp"
@@ -186,12 +222,16 @@
               width="70"
               height="70"
               loading="lazy"
+              class="drop-shadow-md"
             />
           </div>
         </div>
         <div class="skill-box flex justify-center">
           <div
-            class="skill js absolute w-[110px] flex items-center justify-center h-[110px] bg-gradient-to-br from-[#ff66b2]/40 to-[#89cff0]/40 shadow-white/20 shadow-inner rounded-full"
+            class="skill js absolute w-[110px] flex items-center justify-center h-[110px] bg-gradient-to-br from-[#07c8f9] to-[#0d41e1] shadow-white/20 shadow-inner rounded-full"
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+            data-aos-delay="250"
           >
             <img
               src="assets/images/js-logo.webp"
@@ -199,12 +239,16 @@
               width="80"
               height="80"
               loading="lazy"
+              class="drop-shadow-md"
             />
           </div>
         </div>
         <div class="skill-box flex justify-center">
           <div
-            class="skill sass absolute w-[110px] flex items-center justify-center h-[110px] bg-gradient-to-br from-[#ff66b2]/40 to-[#89cff0]/40 shadow-white/20 shadow-inner rounded-full"
+            class="skill sass absolute w-[110px] flex items-center justify-center h-[110px] bg-gradient-to-br from-[#07c8f9] to-[#0d41e1] shadow-white/20 shadow-inner rounded-full"
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+            data-aos-delay="300"
           >
             <img
               src="assets/images/sass-logo.webp"
@@ -212,12 +256,16 @@
               width="80"
               height="80"
               loading="lazy"
+              class="drop-shadow-md"
             />
           </div>
         </div>
         <div class="skill-box flex justify-center">
           <div
-            class="skill tailwind absolute w-[110px] flex items-center justify-center h-[110px] bg-gradient-to-br from-[#ff66b2]/40 to-[#89cff0]/40 shadow-white/20 shadow-inner rounded-full"
+            class="skill tailwind absolute w-[110px] flex items-center justify-center h-[110px] bg-gradient-to-br from-[#07c8f9] to-[#0d41e1] shadow-white/20 shadow-inner rounded-full"
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+            data-aos-delay="350"
           >
             <img
               src="assets/images/tailwind-logo.webp"
@@ -225,12 +273,16 @@
               width="80"
               height="80"
               loading="lazy"
+              class="drop-shadow-md"
             />
           </div>
         </div>
         <div class="skill-box flex justify-center">
           <div
-            class="skill react absolute w-[110px] flex items-center justify-center h-[110px] bg-gradient-to-br from-[#ff66b2]/40 to-[#89cff0]/40 shadow-white/20 shadow-inner rounded-full"
+            class="skill react absolute w-[110px] flex items-center justify-center h-[110px] bg-gradient-to-br from-[#07c8f9] to-[#0d41e1] shadow-white/20 shadow-inner rounded-full"
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+            data-aos-delay="400"
           >
             <img
               src="assets/images/react-logo.webp"
@@ -238,12 +290,16 @@
               width="80"
               height="80"
               loading="lazy"
+              class="drop-shadow-md"
             />
           </div>
         </div>
         <div class="skill-box flex justify-center">
           <div
-            class="skill git absolute w-[110px] flex items-center justify-center h-[110px] bg-gradient-to-br from-[#ff66b2]/40 to-[#89cff0]/40 shadow-white/20 shadow-inner rounded-full"
+            class="skill git absolute w-[110px] flex items-center justify-center h-[110px] bg-gradient-to-br from-[#07c8f9] to-[#0d41e1] shadow-white/20 shadow-inner rounded-full"
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+            data-aos-delay="450"
           >
             <img
               src="assets/images/git-logo.webp"
@@ -251,6 +307,7 @@
               width="80"
               height="80"
               loading="lazy"
+              class="drop-shadow-md"
             />
           </div>
         </div>
@@ -260,13 +317,21 @@
 
     <!-- start projects -->
     <section class="projects my-10" id="Projects">
-      <div class="section-header text-5xl text-center font-bold mb-10 py-5">
+      <div
+        class="section-header text-5xl text-center font-bold mb-10"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
         Projects
       </div>
       <div
         class="container mx-auto px-5 grid grid-cols-1 md:grid-cols-2 gap-10"
       >
-        <div class="project chemistry flex justify-center relative rounded-xl">
+        <div
+          class="project chemistry flex justify-center relative rounded-xl"
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+        >
           <div
             class="project-face front rounded-xl overflow-hidden flex flex-col justify-center items-center"
           >
@@ -308,7 +373,7 @@
               ><span class="font-bold">github repo</span>
             </a>
             <a
-              class="preview bg-gradient-to-br from-[#ff66b2] to-[#89cff0] flex items-center gap-2 py-2 px-5 rounded-3xl transition duration-500 hover:scale-110"
+              class="preview bg-black text-white flex items-center gap-2 py-2 px-5 rounded-3xl transition duration-500 hover:scale-110"
               href="https://chemistry-education-platform.web.app/"
               target="_blank"
             >
@@ -317,7 +382,11 @@
             </a>
           </div>
         </div>
-        <div class="project sport-shop flex justify-center relative rounded-xl">
+        <div
+          class="project sport-shop flex justify-center relative rounded-xl"
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+        >
           <div
             class="project-face front rounded-xl overflow-hidden flex flex-col justify-center items-center"
           >
@@ -359,7 +428,7 @@
               ><span class="font-bold">github repo</span>
             </a>
             <a
-              class="preview bg-gradient-to-br from-[#ff66b2] to-[#89cff0] flex items-center gap-2 py-2 px-5 rounded-3xl transition duration-500 hover:scale-110"
+              class="preview bg-black text-white flex items-center gap-2 py-2 px-5 rounded-3xl transition duration-500 hover:scale-110"
               href="https://sport-shop-002.web.app/"
               target="_blank"
             >
@@ -368,7 +437,11 @@
             </a>
           </div>
         </div>
-        <div class="project techNex flex justify-center relative rounded-xl">
+        <div
+          class="project techNex flex justify-center relative rounded-xl"
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+        >
           <div
             class="project-face front rounded-xl overflow-hidden flex flex-col justify-center items-center"
           >
@@ -410,7 +483,7 @@
               ><span class="font-bold">github repo</span>
             </a>
             <a
-              class="preview bg-gradient-to-br from-[#ff66b2] to-[#89cff0] flex items-center gap-2 py-2 px-5 rounded-3xl transition duration-500 hover:scale-110"
+              class="preview bg-black text-white flex items-center gap-2 py-2 px-5 rounded-3xl transition duration-500 hover:scale-110"
               href="https://business-and-technology-9f318.web.app/"
               target="_blank"
             >
@@ -421,6 +494,8 @@
         </div>
         <div
           class="project math-platform flex justify-center relative rounded-xl"
+          data-aos="zoom-in"
+          data-aos-duration="1000"
         >
           <div
             class="project-face front rounded-xl overflow-hidden flex flex-col justify-center items-center"
@@ -457,7 +532,7 @@
               ><span class="font-bold">github repo</span>
             </a>
             <a
-              class="preview bg-gradient-to-br from-[#ff66b2] to-[#89cff0] flex items-center gap-2 py-2 px-5 rounded-3xl transition duration-500 hover:scale-110"
+              class="preview bg-black text-white flex items-center gap-2 py-2 px-5 rounded-3xl transition duration-500 hover:scale-110"
               href="https://ashrafalrobaa.com/"
               target="_blank"
             >
@@ -468,6 +543,8 @@
         </div>
         <div
           class="project digital-marketing-agency flex justify-center relative rounded-xl"
+          data-aos="zoom-in"
+          data-aos-duration="1000"
         >
           <div
             class="project-face front rounded-xl overflow-hidden flex flex-col justify-center items-center"
@@ -504,7 +581,7 @@
               ><span class="font-bold">github repo</span>
             </a>
             <a
-              class="preview bg-gradient-to-br from-[#ff66b2] to-[#89cff0] flex items-center gap-2 py-2 px-5 rounded-3xl transition duration-500 hover:scale-110"
+              class="preview bg-black text-white flex items-center gap-2 py-2 px-5 rounded-3xl transition duration-500 hover:scale-110"
               href="https://hadymohamed22.github.io/digital_marketing_agency/"
               target="_blank"
             >
@@ -516,6 +593,8 @@
 
         <div
           class="project electronic-e-commerce flex justify-center relative rounded-xl"
+          data-aos="zoom-in"
+          data-aos-duration="1000"
         >
           <div
             class="project-face front rounded-xl overflow-hidden flex flex-col justify-center items-center"
@@ -552,7 +631,7 @@
               ><span class="font-bold">github repo</span>
             </a>
             <a
-              class="preview bg-gradient-to-br from-[#ff66b2] to-[#89cff0] flex items-center gap-2 py-2 px-5 rounded-3xl transition duration-500 hover:scale-110"
+              class="preview bg-black text-white flex items-center gap-2 py-2 px-5 rounded-3xl transition duration-500 hover:scale-110"
               href="https://hadymohamed22.github.io/e-commerce/"
               target="_blank"
             >
@@ -565,7 +644,9 @@
       <div class="flex justify-center">
         <a
           href="https://github.com/Hadymohamed22"
-          class="all-projects mt-10 md:ml-3 text-black font-bold py-2 px-10 rounded-md bg-gradient-to-br from-[#ff66b2] to-[#89cff0] block"
+          class="all-projects mt-10 md:ml-3 text-white dark:text-black font-bold py-2 px-10 rounded-md bg-gradient-to-br from-[#07c8f9] to-[#0d41e1] block"
+          data-aos="fade-up"
+          data-aos-duration="1000"
           >All Projects</a
         >
       </div>
@@ -573,44 +654,64 @@
     <!-- end projects -->
 
     <section class="contact my-10" id="Contact">
-      <div class="section-header text-5xl text-center font-bold py-5">
+      <div
+        class="section-header text-5xl text-center font-bold py-5"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
         Contact
-        <div class="social-links flex gap-3 items-center justify-center mt-5">
-          <a
-            class="linkedin flex justify-center items-center bg-gradient-to-br from-[#ff66b2] to-[#89cff0] w-[40px] h-[40px] rounded-full text-black text-xl"
-            href="linkedin.com/in/hady-elnifali"
-            target="_blank"
-          >
-            <i class="fa-brands fa-linkedin-in"></i>
-          </a>
-          <a
-            class="whatsapp flex justify-center items-center bg-gradient-to-br from-[#ff66b2] to-[#89cff0] w-[40px] h-[40px] rounded-full text-black text-2xl"
-            href="https://wa.me/201029379363"
-            target="_blank"
-          >
-            <i class="fa-brands fa-whatsapp"></i>
-          </a>
-          <a
-            class="instagram flex justify-center items-center bg-gradient-to-br from-[#ff66b2] to-[#89cff0] w-[40px] h-[40px] rounded-full text-black text-2xl"
-            href="https://www.instagram.com/hady__sapry"
-            target="_blank"
-          >
-            <i class="fa-brands fa-instagram"></i>
-          </a>
-          <a
-            class="facebook flex justify-center items-center bg-gradient-to-br from-[#ff66b2] to-[#89cff0] w-[40px] h-[40px] rounded-full text-black text-xl"
-            href="https://www.facebook.com/profile.php?id=100011016163748&locale=ar_AR"
-            target="_blank"
-          >
-            <i class="fa-brands fa-facebook-f"></i>
-          </a>
-        </div>
+      </div>
+      <div class="social-links flex gap-3 items-center justify-center">
+        <a
+          class="linkedin flex justify-center items-center bg-gradient-to-br from-[#07c8f9] to-[#0d41e1] w-[40px] h-[40px] rounded-full text-white dark:text-black text-xl"
+          href="linkedin.com/in/hady-elnifali"
+          target="_blank"
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+          data-aos-delay="100"
+        >
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+        <a
+          class="whatsapp flex justify-center items-center bg-gradient-to-br from-[#07c8f9] to-[#0d41e1] w-[40px] h-[40px] rounded-full text-white dark:text-black text-2xl"
+          href="https://wa.me/201029379363"
+          target="_blank"
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+          data-aos-delay="200"
+        >
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+        <a
+          class="instagram flex justify-center items-center bg-gradient-to-br from-[#07c8f9] to-[#0d41e1] w-[40px] h-[40px] rounded-full text-white dark:text-black text-2xl"
+          href="https://www.instagram.com/hady__sapry"
+          target="_blank"
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+          data-aos-delay="300"
+        >
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a
+          class="facebook flex justify-center items-center bg-gradient-to-br from-[#07c8f9] to-[#0d41e1] w-[40px] h-[40px] rounded-full text-white dark:text-black text-xl"
+          href="https://www.facebook.com/profile.php?id=100011016163748&locale=ar_AR"
+          target="_blank"
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+          data-aos-delay="400"
+        >
+          <i class="fa-brands fa-facebook-f"></i>
+        </a>
       </div>
       <div class="container mx-auto px-5 grid grid-cols-1">
         <form
-          class="rounded-2xl bg-gradient-to-br from-[#ff66b2]/30 to-[#89cff0]/30 p-5 mt-3 w-[80%] mx-auto border border-dashed border-white"
+          class="rounded-2xl bg-gradient-to-br from-[#07c8f9]/50 to-[#0d41e1]/50 p-5 mt-3 w-[80%] mx-auto border border-dashed border-white"
+          data-aos="zoom-in-up"
+          data-aos-duration="1000"
         >
-          <p class="text-center font-bold text-3xl text-white mb-3">
+          <p
+            class="text-center font-bold text-3xl text-white dark:text-black mb-3"
+          >
             Send A Message To Me On Whatsapp
           </p>
           <div class="name-email flex items-center gap-3 flex-wrap">
@@ -640,7 +741,7 @@
             target="_blank"
             type="submit"
             id="sendBtn"
-            class="send-whats-message bg-gradient-to-br from-[#ff66b2] to-[#89cff0] rounded-md text-center block w-full mt-2 font-bold py-2 transition duration-500"
+            class="send-whats-message bg-gradient-to-br from-[#07c8f9] to-[#0d41e1] rounded-md text-center block w-full mt-2 font-bold py-2 transition duration-500 text-white dark:text-black"
           >
             Send Message
           </button>
@@ -650,13 +751,14 @@
 
     <!-- start footer -->
     <footer
-      class="mt-5 pb-5 bg-gradient-to-br from-[#782f53] to-[#426372] relative"
+      class="mt-5 pb-5 bg-gradient-to-br from-[#07c8f9] to-[#0d41e1] relative"
     >
       <img
-        src="assets/images/footer-divider.svg"
+        src="assets/images/footer-divider-light.svg"
         alt="divider wave"
-        class="w-full"
+        class="w-full drop"
         loading="lazy"
+        id="footerDivider"
       />
       <div
         class="container flex flex-col gap-2 justify-center items-center px-5"
@@ -666,6 +768,7 @@
           alt="HM logo"
           loading="lazy"
           width="300"
+          class="drop-shadow-lg"
         />
         <div class="info">
           <div class="address flex items-center gap-2 font-bold">
@@ -691,6 +794,29 @@
     </footer>
     <!-- end footer -->
 
+    <!-- start toggle theme -->
+    <div
+      class="toggle-theme fixed bottom-[30px] right-[30px] w-[40px] h-[40px] text-lg bg-gradient-to-br from-[#07c8f9] to-[#0d41e1] flex justify-center items-center z-50 cursor-pointer rounded-full transition-transform duration-500 hover:scale-125 text-white dark:text-black"
+      id="toggleBtn"
+    >
+      <i class="fa-solid fa-brush"></i>
+    </div>
+    <div
+      class="light-btn fixed w-[40px] h-[40px] text-lg bg-gradient-to-br from-[#07c8f9] to-[#0d41e1] flex justify-center items-center z-[49] cursor-pointer rounded-full transition duration-500 hover:scale-125 text-white dark:text-black"
+      id="lightBtn"
+    >
+      <i class="fa-solid fa-sun"></i>
+    </div>
+    <div
+      class="dark-btn fixed w-[40px] h-[40px] text-lg bg-gradient-to-br from-[#07c8f9] to-[#0d41e1] flex justify-center items-center z-[48] cursor-pointer rounded-full transition duration-500 hover:scale-125 text-white dark:text-black"
+      id="darkBtn"
+    >
+      <i class="fa-solid fa-moon"></i>
+    </div>
+    <!-- end toggle theme -->
+
+    <!-- aos animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- font awesome js file  -->
     <script src="assets/js/all.min.js"></script>
     <!-- main js file -->

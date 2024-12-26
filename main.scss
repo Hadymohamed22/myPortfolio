@@ -6,23 +6,6 @@
   scroll-behavior: smooth;
 }
 
-%bottom-shadow {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 200px;
-  background: linear-gradient(
-    to top,
-    black,
-    rgb(0, 0, 0, 0.8),
-    rgba(0, 0, 0, 0.6),
-    rgba(0, 0, 0, 0.4),
-    rgba(0, 0, 0, 0.2),
-    rgba(0, 0, 0, 0)
-  );
-  bottom: -1px;
-  z-index: 9;
-}
 
 ::-webkit-scrollbar {
   width: 10px;
@@ -33,16 +16,53 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(45deg, #89cff0, #ff66b2);
+  background: linear-gradient(135deg, #07c8f9, #0d41e1);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(45deg, #4e9cc1, #bd3d7d);
+  background: linear-gradient(135deg, #059ac0, #092e9d);
 }
 
-.section-animation {
-  background: linear-gradient(-45deg, #ff66b2, #89cff0);
-  animation: section-animation 10s linear 0s infinite;
+html{
+  transition: .5s;
+&.dark{
+  nav {
+    box-shadow: 1px 1px 30px -10px white;
+  }
+  .photo {
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 200px;
+      background: linear-gradient(
+        to top,
+        black,
+        rgb(0, 0, 0, 0.8),
+        rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0.4),
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0)
+      ) !important;
+      bottom: -1px;
+      z-index: 9;
+    }
+  }
+  .skill{
+    &::after{
+      color: black !important;
+    }
+  }
+  .send-whats-message {
+    &:hover {
+      box-shadow: 0px 0px 20px black inset, 0 0 15px -10px black !important;
+    }
+  }
+  .toggle-theme{
+    box-shadow: 0 0 14px -4px white !important;
+  }
+}
 }
 
 body {
@@ -53,22 +73,13 @@ body {
       a {
         transition: 0.5s;
       }
-      &:hover {
-        background-color: white;
-        a {
-          color: black !important;
-        }
-      }
     }
   }
   .hero {
-    &::before {
-      @extend %bottom-shadow;
-    }
     .background {
       width: 400px;
       height: 400px;
-      background: linear-gradient(135deg, #0d1f4b, #3b0d4b);
+      background: linear-gradient(135deg, #07c8f9, #0d41e1);
       border-radius: 40% 60% 70% 30% / 50% 40% 60% 40%;
       animation: section-animation 10s linear 0s infinite;
       transform-origin: center;
@@ -78,14 +89,28 @@ body {
     .photo {
       position: relative;
       &::before {
-        @extend %bottom-shadow;
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 200px;
+        background: linear-gradient(
+          to top,
+          white,
+          rgb(255, 255, 255, 0.8),
+          rgba(255, 255, 255, 0.6),
+          rgba(255, 255, 255, 0.4),
+          rgba(255, 255, 255, 0.2),
+          rgba(255, 255, 255, 0)
+        );
+        bottom: -1px;
+        z-index: 9;
       }
     }
   }
 
   .name,
   .section-header {
-    background: linear-gradient(-45deg, #ff66b2, #89cff0);
+    background: linear-gradient(135deg, #07c8f9, #0d41e1);
     background-clip: text;
     color: transparent;
     background-size: 200% 200%;
@@ -113,7 +138,7 @@ body {
       right: -4px;
       top: 14px;
       border-top: 10px solid transparent;
-      border-right: 10px solid rgb(135, 135, 135);
+      border-right: 10px solid #07c8f9;
       border-bottom: 10px solid transparent;
       border-left: 10px solid transparent;
       visibility: hidden;
@@ -128,12 +153,12 @@ body {
         size: 12px;
         weight: bold;
       }
-      color: black;
+      color: white;
       top: 5px;
       right: -28px;
       width: 35px;
       height: 20px;
-      background-color: rgb(135, 135, 135);
+      background-color: #07c8f9;
       border-radius: 3px;
       visibility: hidden;
       transform: scale(0) rotate(63deg);
@@ -168,7 +193,7 @@ body {
     perspective: 1300px;
     height: 400px;
     .project-face {
-      box-shadow: 0px 0px 20px -10px #ffffff;
+      box-shadow: 0px 0px 20px -8px #000;
       transition: 0.5s;
       position: absolute;
       width: 100%;
@@ -189,7 +214,7 @@ body {
       }
       &.back {
         transform: rotateY(180deg);
-        background: linear-gradient(135deg, #0d1f4b, #3b0d4b);
+        background: linear-gradient(135deg, #07c8f9, #0d41e1);
       }
     }
     &.electronic-e-commerce {
@@ -264,9 +289,29 @@ body {
     }
     .send-whats-message {
       &:hover {
-        box-shadow: 0px 0px 20px black inset, 0 0 15px -10px white;
+        box-shadow: 0px 0px 20px white inset, 0 0 15px -10px black;
       }
     }
+  }
+  .toggle-theme{
+    box-shadow: 0 0 14px -4px black;
+  }
+  .light-btn,.dark-btn{
+    transition: .5s;
+    bottom: 30px;
+    right: 30px;
+  }
+  .light-btn{
+&.open{
+  bottom: 70px;
+  right: 60px;
+}
+  }
+  .dark-btn{
+&.open{
+  bottom: 20px;
+  right: 80px;
+}
   }
 }
 
